@@ -1,0 +1,17 @@
+CARDIODESK — ХМАРНА ЗБІРКА WINDOWS .EXE
+=======================================
+
+На ПК не потрібно встановлювати Rust, Visual Studio Build Tools або Tauri — усе збирає GitHub Actions.
+
+1. Увійдіть на github.com.
+2. Створіть новий репозиторій, наприклад CardioDesk-Desktop. Public або Private — на ваш вибір.
+3. Завантажте ВЕСЬ вміст цієї папки в корінь репозиторію. Папка .github теж має бути завантажена.
+4. Відкрийте Actions -> "Build CardioDesk Windows EXE".
+5. Натисніть Run workflow -> Run workflow.
+6. Після зеленої галочки відкрийте запуск.
+7. Унизу в Artifacts завантажте "CardioDesk-Windows-x64".
+8. У ZIP буде готовий Windows .exe інсталятор.
+
+Для наступного оновлення замініть файли в репозиторії й повторіть Run workflow.
+
+Примітка: інсталятор не підписаний комерційним Windows code-signing сертифікатом, тому SmartScreen може показати стандартне попередження для unsigned програм.
