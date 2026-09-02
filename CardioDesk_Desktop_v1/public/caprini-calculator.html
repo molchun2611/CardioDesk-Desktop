@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Caprini 2013 · ризик ВТЕ</title>
+<style>
+:root{--p:#00639a;--ps:#d9edff;--bg:#f7f9ff;--card:#fff;--text:#17212b;--muted:#667480;--line:#d4dde5;--soft:#edf2f6;--ok:#17643a;--okbg:#e6f5eb;--warn:#8a4b12;--warnbg:#fff0dd;--danger:#a83832;--dangerbg:#fff0ee;--shadow:0 12px 30px rgba(28,47,61,.06);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Arial,sans-serif;color-scheme:light}
+html[data-theme="dark"]{--p:#77c9f4;--ps:#173f57;--bg:#0f151b;--card:#182129;--text:#eef3f7;--muted:#aebbc6;--line:#35434e;--soft:#202c35;--ok:#8bdbaa;--okbg:#17372c;--warn:#ffd18d;--warnbg:#3e301d;--danger:#ffb4ad;--dangerbg:#40242a;color-scheme:dark}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text)}body{padding:15px 13px 32px;font-size:13px;line-height:1.45;-webkit-font-smoothing:antialiased}.app{width:min(100%,820px);margin:auto}.intro h1{margin:0;font-size:25px;line-height:1.12;letter-spacing:-.025em}.intro p{margin:5px 0 0;color:var(--p);font-size:12px}.notice{margin:13px 0;padding:11px 13px;border:1px solid #efc479;border-radius:16px;background:var(--warnbg);color:var(--warn);font-size:10.8px}.card{margin:12px 0;padding:15px;border:1px solid var(--line);border-radius:21px;background:var(--card);box-shadow:var(--shadow)}.card h2{margin:0;font-size:16px}.sub{margin:3px 0 0;color:var(--muted);font-size:10.4px}.patient{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:13px}.field{display:grid;min-width:0;gap:6px}.field label{font-size:10.5px;font-weight:650}.field input,.field select{width:100%;min-width:0;height:47px;padding:0 11px;border:1px solid #8997a2;border-radius:13px;background:transparent;color:var(--text);outline:none;font-size:15px}.field input:focus,.field select:focus{border-color:var(--p);box-shadow:0 0 0 3px color-mix(in srgb,var(--p) 14%,transparent)}.field small{color:var(--muted);font-size:9.2px;line-height:1.3}.auto{display:flex;min-height:47px;align-items:center;padding:0 11px;border:1px dashed var(--line);border-radius:13px;background:var(--soft);font-size:13px;font-weight:700}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}.pill{flex:0 0 auto;padding:5px 8px;border-radius:10px;background:var(--ps);color:var(--p);font-size:10px;font-weight:750}.criteria{display:grid;gap:7px}.criterion{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:9px;align-items:start;padding:10px 11px;border:1px solid var(--line);border-radius:14px;background:transparent;cursor:pointer}.criterion:has(input:checked){border-color:#8ec9ec;background:color-mix(in srgb,var(--ps) 58%,var(--card))}.criterion input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--p)}.criterion strong{display:block;font-size:11.7px;font-weight:650;line-height:1.3}.criterion small{display:block;margin-top:2px;color:var(--muted);font-size:9.5px;line-height:1.35}.pts{min-width:30px;color:var(--p);font-size:12px;font-weight:800;text-align:right}.choice-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:5px;margin-top:9px;padding:5px;border-radius:15px;background:var(--soft)}.choice-row label{display:flex;min-height:43px;align-items:center;justify-content:center;padding:7px 9px;border-radius:11px;color:var(--muted);font-size:10.5px;font-weight:650;text-align:center;cursor:pointer}.choice-row label:has(input:checked){background:var(--card);color:var(--p);box-shadow:0 2px 8px rgba(40,60,76,.1)}.choice-row input{position:absolute;opacity:0;pointer-events:none}.count-row{display:grid;grid-template-columns:minmax(0,1fr) 110px;gap:10px;align-items:center;padding:10px 11px;border:1px solid var(--line);border-radius:14px}.count-row strong{display:block;font-size:11.7px}.count-row small{display:block;margin-top:2px;color:var(--muted);font-size:9.5px}.count-row select{width:100%;height:43px;border:1px solid #8997a2;border-radius:12px;background:transparent;color:var(--text);padding:0 9px;font-size:13px}.women[hidden]{display:none}.result{position:static;margin:14px 0 0;padding:14px 15px;border:1px solid var(--line);border-radius:20px;background:color-mix(in srgb,var(--card) 94%,transparent);box-shadow:0 14px 35px rgba(24,45,61,.16);backdrop-filter:blur(14px)}.result-top{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:center}.score{display:grid;width:72px;height:72px;place-items:center;border-radius:21px;background:var(--ps);color:var(--p)}.score strong{font-size:30px;line-height:1}.score span{margin-top:-10px;font-size:8.5px;font-weight:750;text-transform:uppercase}.result h2{margin:0;font-size:17px}.result p{margin:4px 0 0;color:var(--muted);font-size:10.7px}.plan{margin-top:10px;padding:10px 11px;border-radius:13px;background:var(--soft);font-size:10.5px;line-height:1.4}.plan strong{display:block;margin-bottom:3px}.plan.ok{background:var(--okbg);color:var(--ok)}.plan.warn{background:var(--warnbg);color:var(--warn)}.plan.danger{background:var(--dangerbg);color:var(--danger)}.extras{display:grid;gap:7px;margin-top:10px}.toggle{display:flex;align-items:flex-start;gap:8px;padding:9px 10px;border-radius:12px;background:var(--soft);font-size:10px}.toggle input{margin-top:1px}.source{margin-top:13px;padding:12px;border:1px solid var(--line);border-radius:16px;background:var(--card)}.source summary{cursor:pointer;color:var(--p);font-size:10.5px;font-weight:750}.source p,.source li{color:var(--muted);font-size:9.5px;line-height:1.4}.source ul{margin:7px 0 0;padding-left:17px}.muted-note{margin-top:8px;color:var(--muted);font-size:9.5px}.hidden{display:none!important}
+@media(max-width:700px){.patient{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:13px}.criterion{grid-template-columns:25px minmax(0,1fr) auto}.section-head{align-items:center}}
+@media(max-width:390px){body{padding:12px 10px 28px}.patient{grid-template-columns:1fr}.count-row{grid-template-columns:1fr}.choice-row{grid-template-columns:1fr}.result-top{grid-template-columns:64px minmax(0,1fr)}.score{width:64px;height:64px;border-radius:18px}.score strong{font-size:27px}.criterion{padding:9px}.pts{min-width:26px}}
+@media print{body{padding:0;background:#fff;color:#111}.result{position:static;box-shadow:none;backdrop-filter:none}.notice,.source{display:none}.card,.result{break-inside:avoid;border-radius:8px;box-shadow:none}}
+</style>
+</head>
+<body>
+<main class="app">
+<header class="intro"><h1>Caprini 2013</h1><p>Періопераційний ризик венозного тромбоемболізму</p></header>
+<div class="notice"><strong>Важливо:</strong> Caprini — насамперед хірургічна/періопераційна RAM. Для терапевтичних госпіталізованих пацієнтів у CardioDesk є PADUA. Бал оцінює ризик ВТЕ, але не замінює оцінку ризику кровотечі та локальний протокол профілактики.</div>
+
+<section class="card">
+  <div class="section-head"><div><h2>1 · Пацієнт</h2><p class="sub">Вік і BMI рахуються автоматично; стать керує жіночими факторами.</p></div><span class="pill">авто</span></div>
+  <div class="patient">
+    <div class="field"><label for="age">Вік</label><input id="age" type="number" inputmode="numeric" min="18" max="120" placeholder="років"><small id="age-help">0 балів до 40 років</small></div>
+    <div class="field"><label for="sex">Стать</label><select id="sex"><option value="m">Чоловіча</option><option value="f">Жіноча</option></select><small>Показує жіночі фактори нижче.</small></div>
+    <div class="field"><label for="weight">Маса</label><input id="weight" type="number" inputmode="decimal" min="20" max="300" step="0.1" placeholder="кг"><small>Для автоматичного BMI.</small></div>
+    <div class="field"><label for="height">Зріст</label><input id="height" type="number" inputmode="decimal" min="100" max="230" step="0.1" placeholder="см"><small>Для автоматичного BMI.</small></div>
+    <div class="field"><label>BMI</label><div class="auto" id="bmi-value">—</div><small id="bmi-help">BMI ≥25 = +1; >40 = ще +1 у версії 2013.</small></div>
+    <div class="field"><label>Автобали</label><div class="auto" id="auto-score">0</div><small>Вік + BMI; інші фактори нижче.</small></div>
+  </div>
+</section>
+
+<section class="card">
+  <div class="section-head"><div><h2>2 · Операція та мобільність</h2><p class="sub">Взаємовиключні сценарії оформлені як один вибір, щоб не подвоювати бали.</p></div><span class="pill">0–6+</span></div>
+  <strong style="font-size:11px">Планована операція</strong>
+  <div class="choice-row" id="surgery-choice">
+    <label><input type="radio" name="surgery" value="0" checked>Немає / не враховувати</label>
+    <label><input type="radio" name="surgery" value="1">Мала &lt;45 хв · +1</label>
+    <label><input type="radio" name="surgery" value="2">Велика &gt;45 хв · +2</label>
+    <label><input type="radio" name="surgery" value="5">Ендопротезування кульші/коліна · +5</label>
+  </div>
+  <div class="criteria" style="margin-top:9px">
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Тривалість поточної операції &gt;2 год</strong><small>Додатковий фактор 2013; додається окремо. Не замінює базовий тип операції.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Велика операція &gt;45 хв протягом останнього місяця</strong><small>Попередня, а не поточна операція.</small></span><span class="pts">+1</span></label>
+  </div>
+  <strong style="display:block;margin-top:12px;font-size:11px">Іммобілізація / ліжковий режим</strong>
+  <div class="choice-row" id="mobility-choice">
+    <label><input type="radio" name="mobility" value="0" checked>Немає</label>
+    <label><input type="radio" name="mobility" value="1">Знижена мобільність &lt;72 год · +1</label>
+    <label><input type="radio" name="mobility" value="2">Ліжковий режим ≥72 год · +2</label>
+  </div>
+</section>
+
+<section class="card">
+  <div class="section-head"><div><h2>3 · Фактори по 1 балу</h2><p class="sub">Позначте лише те, що реально є у пацієнта.</p></div><span class="pill">+1</span></div>
+  <div class="criteria">
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Видимі варикозні вени</strong><small>Не «судинні зірочки» і не лише анамнез операції з приводу варикозу.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Набряк нижніх кінцівок зараз</strong><small>Клінічно видимий/значущий набряк.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Запальне захворювання кишківника</strong><small>Хвороба Крона або виразковий коліт в анамнезі.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Інфаркт міокарда протягом останнього місяця</strong></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Серцева недостатність протягом останнього місяця</strong></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Серйозна інфекція протягом останнього місяця</strong><small>Напр. пневмонія, целюліт, септичний стан.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Хронічне захворювання легень</strong><small>Напр. COPD/емфізема; не лише бронхіальна астма.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Куріння протягом останнього місяця</strong><small>Додатковий фактор версії 2013.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Цукровий діабет, що потребує інсуліну</strong><small>Додатковий фактор версії 2013.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Хіміотерапія</strong><small>Поточне лікування; додатковий фактор версії 2013.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="1"><span><strong>Переливання крові</strong><small>Одне або більше; додатковий фактор версії 2013.</small></span><span class="pts">+1</span></label>
+  </div>
+</section>
+
+<section class="card women" id="women" hidden>
+  <div class="section-head"><div><h2>4 · Лише для жінок</h2><p class="sub">Кожен пункт = 1 бал.</p></div><span class="pill">+1</span></div>
+  <div class="criteria">
+    <label class="criterion"><input class="cap female-cap" type="checkbox" data-points="1"><span><strong>Естрогенвмісна контрацепція / гормональна терапія</strong><small>У моделі також враховуються деякі естрогеноподібні препарати.</small></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap female-cap" type="checkbox" data-points="1"><span><strong>Вагітність або пологи протягом останнього місяця</strong></span><span class="pts">+1</span></label>
+    <label class="criterion"><input class="cap female-cap" type="checkbox" data-points="1"><span><strong>Акушерський анамнез високого ризику</strong><small>Незрозуміле мертвонародження, ≥3 спонтанні аборти, передчасні пологи з прееклампсією або затримкою росту плода.</small></span><span class="pts">+1</span></label>
+  </div>
+</section>
+
+<section class="card">
+  <div class="section-head"><div><h2>5 · Фактори по 2 бали</h2></div><span class="pill">+2</span></div>
+  <div class="criteria">
+    <label class="criterion"><input class="cap" type="checkbox" data-points="2"><span><strong>Злоякісне новоутворення — тепер або в анамнезі</strong><small>Виключаючи немеланомний рак шкіри.</small></span><span class="pts">+2</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="2"><span><strong>Іммобілізуюча гіпсова пов’язка / ортез протягом місяця</strong><small>Такий, що обмежує рух гомілки/ходьбу.</small></span><span class="pts">+2</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="2"><span><strong>Центральний венозний доступ протягом останнього місяця</strong><small>ЦВК, PICC, порт у шиї/грудній клітці.</small></span><span class="pts">+2</span></label>
+  </div>
+</section>
+
+<section class="card">
+  <div class="section-head"><div><h2>6 · Фактори по 3 бали</h2><p class="sub">Для повторних VTE та кількох тромбофілій модель допускає накопичення балів.</p></div><span class="pill">+3</span></div>
+  <div class="criteria">
+    <div class="count-row"><span><strong>Окремі епізоди DVT / PE / поверхневого венозного тромбозу</strong><small>Кожен окремий епізод DVT, PE або SVT = +3; одночасні DVT+PE рахуються як один епізод.</small></span><select id="vte-count"><option value="0">0</option><option value="1">1 · +3</option><option value="2">2 · +6</option><option value="3">3 · +9</option><option value="4">4 · +12</option></select></div>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="3"><span><strong>Сімейний анамнез VTE</strong><small>У моделі враховують кровні родичі; особливо важливий ранній VTE.</small></span><span class="pts">+3</span></label>
+    <div class="count-row"><span><strong>Відомі маркери тромбофілії</strong><small>Напр. Factor V Leiden, протромбін G20210A, дефіцит AT/Protein C/S, lupus anticoagulant/APS, HIT та інші підтверджені стани.</small></span><select id="thromb-count"><option value="0">0</option><option value="1">1 · +3</option><option value="2">2 · +6</option><option value="3">3 · +9</option><option value="4">4 · +12</option></select></div>
+  </div>
+</section>
+
+<section class="card">
+  <div class="section-head"><div><h2>7 · Фактори по 5 балів</h2><p class="sub">Переважно гострі/високоризикові стани.</p></div><span class="pill">+5</span></div>
+  <div class="criteria">
+    <label class="criterion"><input class="cap" type="checkbox" data-points="5"><span><strong>Перелом кульші, таза або ноги</strong><small>У межах актуального періопераційного епізоду / останнього місяця.</small></span><span class="pts">+5</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="5"><span><strong>Серйозна травма</strong><small>Напр. множинні переломи / політравма.</small></span><span class="pts">+5</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="5"><span><strong>Травма спинного мозку з паралічем</strong></span><span class="pts">+5</span></label>
+    <label class="criterion"><input class="cap" type="checkbox" data-points="5"><span><strong>Інсульт протягом останнього місяця</strong></span><span class="pts">+5</span></label>
+  </div>
+</section>
+
+<section class="card">
+  <div class="section-head"><div><h2>8 · Тактика профілактики</h2><p class="sub">Не входить у Caprini; лише модифікує практичну підказку.</p></div><span class="pill">контекст</span></div>
+  <div class="extras">
+    <label class="toggle"><input id="high-bleed" type="checkbox"><span><strong>Високий ризик кровотечі / фармакопрофілактика тимчасово небезпечна</strong><br><span style="color:var(--muted)">У підказці пріоритет буде відданий механічній профілактиці до зниження ризику кровотечі.</span></span></label>
+    <label class="toggle"><input id="cancer-abdopelvic" type="checkbox"><span><strong>Абдомінальна/тазова операція з приводу раку</strong><br><span style="color:var(--muted)">Для високого VTE-ризику може бути показана продовжена LMWH-профілактика до 4 тижнів, якщо ризик кровотечі прийнятний.</span></span></label>
+  </div>
+  <p class="muted-note">Порогові групи та конкретна схема профілактики залежать від типу операції/спеціальності. Особливо це стосується ортопедії, пластичної та онкохірургії.</p>
+</section>
+
+<section class="result" id="result">
+  <div class="result-top"><div class="score"><strong id="score">0</strong><span>балів</span></div><div><h2 id="risk-title">Дуже низький ризик</h2><p id="risk-desc">ACCP-інтерпретація для загальної неортопедичної хірургії: 0 балів.</p></div></div>
+  <div class="plan ok" id="plan"><strong>Орієнтир профілактики</strong><span id="plan-text">Рання мобілізація. Звірити локальний протокол.</span></div>
+</section>
+
+<details class="source"><summary>Джерела та обмеження моделі</summary><ul><li>2013 Caprini RAM: фактори 1 / 2 / 3 / 5 балів; модель є динамічною і має бути переоцінена при зміні стану.</li><li>ACCP nonorthopedic surgery: 0 — very low, 1–2 — low, 3–4 — moderate, ≥5 — high risk; профілактика залежить також від ризику кровотечі.</li><li>Спеціальності можуть використовувати інші cut-off, тому бал не слід механічно переносити між різними хірургічними популяціями.</li></ul></details>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const $$=s=>Array.from(document.querySelectorAll(s));
+const num=v=>{const n=parseFloat(v);return Number.isFinite(n)?n:null};
+function agePoints(a){if(a===null)return 0;if(a>=75)return 3;if(a>=61)return 2;if(a>=41)return 1;return 0}
+function bmiValue(){const w=num($('#weight').value),h=num($('#height').value);return w&&h? w/Math.pow(h/100,2):null}
+function bmiPoints(b){if(b===null)return 0;if(b>40)return 2;if(b>=25)return 1;return 0}
+function riskFor(score){if(score===0)return['Дуже низький ризик','ACCP: 0 балів','verylow'];if(score<=2)return['Низький ризик','ACCP: 1–2 бали','low'];if(score<=4)return['Помірний ризик','ACCP: 3–4 бали','moderate'];return['Високий ризик','ACCP: ≥5 балів','high']}
+function prophylaxis(score){const bleed=$('#high-bleed').checked,cancer=$('#cancer-abdopelvic').checked;let cls='ok',text='';if(score===0){text='Рання мобілізація; рутинна фармакопрофілактика зазвичай не потрібна.'}else if(score<=2){text='Розглянути механічну профілактику (IPC/SCD) згідно локального протоколу.'}else if(score<=4){cls='warn';text=bleed?'Через високий ризик кровотечі — IPC до зниження геморагічного ризику; потім повторно оцінити фармакопрофілактику.':'LMWH або низькодозовий UFH; IPC є альтернативою/додатком залежно від ризику кровотечі та операції.'}else{cls='danger';text=bleed?'Високий VTE-ризик, але фармакопрофілактика небезпечна: IPC до зниження ризику кровотечі, потім повторна оцінка.':'Фармакопрофілактика (LMWH або низькодозовий UFH) + механічна профілактика, якщо немає протипоказань.';if(cancer&&!bleed)text+=' Для абдомінально-тазової операції з приводу раку розглянути продовження LMWH до 4 тижнів.';if(score>=9)text+=' Бал ≥9 означає особливо високе накопичення факторів; тривалість профілактики визначайте за типом операції та локальним протоколом.'}return[cls,text]}
+function calc(){const a=num($('#age').value),b=bmiValue(),ap=agePoints(a),bp=bmiPoints(b);$('#bmi-value').textContent=b?b.toFixed(1).replace('.',','):'—';$('#age-help').textContent=a===null?'Введіть вік':ap?`Автоматично +${ap}`:'0 балів';$('#bmi-help').textContent=b===null?'BMI ≥25 = +1; >40 = ще +1 у версії 2013.':bp===2?'BMI >40: +2 сумарно (базовий BMI-фактор + додатковий 2013)':'BMI '+(bp?'+1':'0 балів');$('#auto-score').textContent=ap+bp;
+ let score=ap+bp;score+=Number(document.querySelector('input[name="surgery"]:checked')?.value||0);score+=Number(document.querySelector('input[name="mobility"]:checked')?.value||0);$$('.cap').forEach(x=>{if(x.checked&&!x.disabled)score+=Number(x.dataset.points||0)});score+=Number($('#vte-count').value||0)*3;score+=Number($('#thromb-count').value||0)*3;
+ const [title,desc]=riskFor(score);$('#score').textContent=score;$('#risk-title').textContent=title;$('#risk-desc').textContent=desc+' · загальна неортопедична хірургія; specialty cut-offs можуть відрізнятися.';const [cls,text]=prophylaxis(score);$('#plan').className='plan '+cls;$('#plan-text').textContent=text;
+}
+function syncSex(){const female=$('#sex').value==='f';$('#women').hidden=!female;if(!female)$$('.female-cap').forEach(x=>x.checked=false);calc()}
+function syncSurgery(){const v=Number(document.querySelector('input[name="surgery"]:checked')?.value||0);const duration=$$('.criterion input.cap').find(x=>x.parentElement?.innerText.includes('Тривалість поточної операції >2 год'));if(duration){duration.disabled=v===0||v===1;if(duration.disabled)duration.checked=false;}calc()}
+$$('input,select').forEach(el=>el.addEventListener('input',calc));$$('input,select').forEach(el=>el.addEventListener('change',calc));$('#sex').addEventListener('change',syncSex);$$('input[name="surgery"]').forEach(el=>el.addEventListener('change',syncSurgery));syncSex();syncSurgery();calc();
+window.preparePrint=()=>window.print();
+</script>
+</body>
+</html>
